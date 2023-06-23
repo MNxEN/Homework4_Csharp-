@@ -18,6 +18,11 @@ int Prompt(string message)
 double PowerNumber(int num, int pow)
 {
     double result = num;
+    if (pow == 0)
+    {
+        result = 1;
+        return result;
+    }
     for (int i = 1; i < pow; i++)
     {
         result = result * num;
